@@ -16,7 +16,7 @@ class Book extends React.Component {
         })
     }
 
-    render () {  
+   render () {  
 
         return (
             <div className="book">
@@ -33,7 +33,7 @@ class Book extends React.Component {
                         </div>
                     </div>
                 <div className="book-title">{this.props.aBook.title}</div>
-                {this.props.aBook.authors.map((author) => (
+                {this.props.aBook.authors !== undefined && this.props.aBook.authors.map((author) => (
                     <div className="book-authors" key={author}>{author}</div>
                 ))}    
             </div>

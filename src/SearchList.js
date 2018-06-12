@@ -44,7 +44,7 @@ class SearchList extends React.Component {
         result.map((resultElement) => {
             if("authors" in resultElement) {}
             else {
-                resultElement.authors = ['n/a']; 
+                resultElement.authors = ['']; 
             }
             if("imageLinks" in resultElement) {}
             else {
